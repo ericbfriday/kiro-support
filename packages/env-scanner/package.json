@@ -1,0 +1,38 @@
+{
+  "name": "@kiro-transition/env-scanner",
+  "version": "0.0.1",
+  "description": "Detects runtime versions and environment configuration for Kiro projects",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test dist/**/*.test.js",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "yaml": "^2.6.0",
+    "toml": "^3.0.0",
+    "glob": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0"
+  },
+  "keywords": [
+    "kiro",
+    "environment",
+    "runtime",
+    "detection",
+    "version"
+  ],
+  "license": "MIT"
+}

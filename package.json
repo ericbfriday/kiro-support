@@ -1,0 +1,33 @@
+{
+  "name": "kiro-transition-toolkit",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Toolkit for transitioning projects to Kiro format",
+  "keywords": [
+    "kiro",
+    "ai",
+    "assistant",
+    "migration",
+    "steering",
+    "mcp"
+  ],
+  "author": "Kiro Transition Toolkit Contributors",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r clean",
+    "typecheck": "pnpm -r typecheck",
+    "cli": "pnpm --filter @kiro-transition/cli start"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
