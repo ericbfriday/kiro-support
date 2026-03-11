@@ -1,0 +1,53 @@
+{
+  "mcpServers": {
+      "jira-core": {
+        "command": "/path/to/.volta/bin/volta",
+        "args": [
+          "run",
+          "--node",
+          "24.8.0",
+          "node",
+          "/absolute/path/to/jira-helper-mcp/servers/jira-core-mcp/dist/index.js"
+        ],
+        "env": {
+          "JIRA_URL_QA": "https://your-qa-instance.jira.example.com",
+          "JIRA_TOKEN_QA": "YOUR_QA_JIRA_TOKEN_HERE",
+          "JIRA_URL": "https://your-prod-instance.jira.example.com",
+          "JIRA_TOKEN": "YOUR_PROD_JIRA_TOKEN_HERE"
+        }
+      },
+      "jira-dev": {
+        "command": "/path/to/.volta/bin/volta",
+        "args": [
+          "run",
+          "--node",
+          "24.8.0",
+          "node",
+          "/absolute/path/to/jira-helper-mcp/servers/jira-dev-mcp/dist/index.js"
+        ],
+        "env": {
+          "JIRA_URL_QA": "https://your-qa-instance.jira.example.com",
+          "JIRA_TOKEN_QA": "YOUR_QA_JIRA_TOKEN_HERE",
+          "JIRA_URL": "https://your-prod-instance.jira.example.com",
+          "JIRA_TOKEN": "YOUR_PROD_JIRA_TOKEN_HERE"
+        }
+      },
+      "jira-context": {
+        "command": "/path/to/.volta/bin/volta",
+        "args": [
+          "run",
+          "--node",
+          "24.8.0",
+          "node",
+          "/absolute/path/to/jira-helper-mcp/servers/jira-context-mcp/dist/index.js"
+        ],
+        "env": {
+          "JIRA_URL_QA": "https://your-qa-instance.jira.example.com",
+          "JIRA_TOKEN_QA": "YOUR_QA_JIRA_TOKEN_HERE",
+          "JIRA_URL": "https://your-prod-instance.jira.example.com",
+          "JIRA_TOKEN": "YOUR_PROD_JIRA_TOKEN_HERE",
+          "SESSION_STORAGE": "/absolute/path/to/jira-helper-mcp/.jira-sessions"
+        }
+      }
+  }
+}
