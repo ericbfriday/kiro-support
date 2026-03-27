@@ -18,7 +18,7 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "yaml": "^2.6.0",
+    "yaml": "^2.8.3",
     "gray-matter": "^4.0.3",
     "@kiro-transition/env-scanner": "workspace:*"
   },
