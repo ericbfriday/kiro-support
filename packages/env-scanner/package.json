@@ -18,7 +18,7 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "yaml": "^2.6.0",
+    "yaml": "^2.8.3",
     "toml": "^3.0.0",
     "glob": "^11.0.0"
   },
